@@ -5,7 +5,8 @@
     padding: 0;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
+    color: #023047;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-    background-color: rgb(77, 190, 228);
+    background-color: #8ecae6;
     display: grid;
     grid-template-columns: minmax(200px, 300px) 3fr 1fr;
     grid-template-rows: 150px 3fr 50px;
@@ -22,7 +23,7 @@ body {
 
 .left_Bar {
     height: 100%;
-    background-color: rgba(109, 109, 248, 0.685);
+    background-color: #219ebc;
     grid-row: 1 / 4;
     display: grid;
     grid-template-rows: repeat(auto-fill, 100px);
@@ -37,27 +38,29 @@ button {
     position: relative;
     background: none;
     border: none;
-    color: whitesmoke;
+    color: #023047;
     border-radius: 2%;
 }
 
 button:hover {
-    color: black;
+    color: #023047;
     top: -8px;
-    box-shadow: 3px 3px 7px;
+    box-shadow:#023047 3px 3px 7px;
+    height: 75px;
+    width: 225px;
 }
 
 .header {
     background-color: whitesmoke;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
-    box-shadow: 5px 0 10px;
+    box-shadow: #023047 5px 0 10px;
 }
 
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    row-gap: 25px;
     grid-template-rows: 50px repeat(3, 300px);
     justify-items: center;
     align-items: center;
@@ -70,21 +73,30 @@ button:hover {
 .project {
     background-color: whitesmoke;
     width: 400px;
-    height: 250px;
-    border: 1px solid black;
-    border-left: 8px solid rgba(211, 211, 28, 0.911);
-    border-radius: 5%;
+    height: 275px;
+    border-left: 8px solid #ffb703;
+    border-radius: 2%;
     border-top: none;
     border-right: none;
     border-bottom: none;
-    box-shadow:  0.5px 0.5px 1px;
-    position: relative;
-    transition: top ease 0.5s;
+    box-shadow:#023047 0.5px 0.5px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
 }
 
 .project:hover {
-    top: -8px;
-    box-shadow: 5px 5px 10px;
+    box-shadow: #023047 5px 5px 10px;
+    width: 450px;
+    height: 300px;
+    transform: scale(1.2);
+}
+
+.etch {
+    height: 200px;
+    width: 250px;
 }
 
 .right_Bar {
@@ -106,8 +118,10 @@ button:hover {
 
 .filler1,
 .filler2 {
-    border: 1px solid black;
     height: 300px;
-    width: 100%;
+    width: 90%;
+    border-radius:2%;
+    background-color: whitesmoke;
+    border-left: 6px solid #ffb703;
 }
 
