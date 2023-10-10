@@ -29,7 +29,7 @@ body {
     grid-template-rows: repeat(auto-fill, 100px);
 }
 
-button {
+.button_Left {
     height: 50px;
     width: 200px;
     margin-left: 20px;
@@ -118,7 +118,7 @@ a:hover {
 .github    {
     height: 50px;
     width: 50px;
- }
+}
 .right_Bar {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
@@ -143,5 +143,7 @@ a:hover {
     border-radius:2%;
     background-color: whitesmoke;
     border-left: 6px solid #ffb703;
+    text-wrap: wrap;
+    overflow:auto;
 }
 
