@@ -31,7 +31,7 @@ body {
 
 .button_Left {
     height: 50px;
-    width: 200px;
+    width: 100px;
     margin-left: 20px;
     box-shadow: 0.5px 0.5px 1px;
     transition: top ease 0.5s;
@@ -42,12 +42,13 @@ body {
     border-radius: 2%;
 }
 
-button:hover {
+.button_Left:hover {
     color: #023047;
     top: -8px;
     box-shadow:#023047 3px 3px 7px;
     height: 75px;
-    width: 225px;
+    width: 125px;
+    background-color: whitesmoke;
 }
 
 .header {
@@ -55,6 +56,39 @@ button:hover {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     box-shadow: #023047 5px 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+}
+
+.search{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.icon-search{
+    margin-left: 20px;
+}
+input[type="search"]{
+    width: 600px;
+    border: 0.5px solid black;
+    border-radius: 4%;
+}
+.admin-info{
+    height: 75%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.placeholder{
+    margin-left: 20px;
+    margin-right: 30px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffb703;
 }
 
 .projects {
@@ -147,3 +181,7 @@ a:hover {
     overflow:auto;
 }
 
+input[type="search"]{
+    border-radius: 20px;
+    margin-left: 10px;
+}
